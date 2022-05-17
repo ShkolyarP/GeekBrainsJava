@@ -1,4 +1,4 @@
-package HomeWork2;
+package HomeWork2; //ÄÇ2
 
 public class HomeWork2 {
     public static void main(String[] args) {
