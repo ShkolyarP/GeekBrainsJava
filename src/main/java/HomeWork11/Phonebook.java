@@ -29,7 +29,8 @@ public class Phonebook {
 
             for (Phonebook phonebook : phonebooks
             ) {
-                phonebook.telephoneNumber.add(telephoneNumber);
+                if (phonebook.surname.equals(surname)){
+                phonebook.telephoneNumber.add(telephoneNumber);}
             }
 
         } else {
