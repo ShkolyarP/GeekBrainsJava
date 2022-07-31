@@ -9,19 +9,19 @@ public class Task1 {
         Task1 task1 = new Task1();
 
         new Thread(() -> {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 5; i++) {
                 task1.printingA();
             }
         }).start();
 
         new Thread(() -> {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 5; i++) {
                 task1.printingB();
             }
         }).start();
 
         new Thread(() -> {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 5; i++) {
                 task1.printingC();
             }
         }).start();
@@ -34,7 +34,7 @@ public class Task1 {
         System.out.print("A");
         k++;
         try {
-            if (k == 1 || k == 4) {
+            if (k == 1 || k == 4 || k == 7 || k == 10) {
                 wait();
             }
         } catch (InterruptedException e) {
@@ -48,7 +48,7 @@ public class Task1 {
         System.out.print("B");
         k++;
         try {
-            if (k == 2 || k == 5) {
+            if (k == 2 || k == 5 || k == 8 || k == 11) {
                 wait();
             }
         } catch (InterruptedException e) {
@@ -62,7 +62,7 @@ public class Task1 {
         System.out.print("C");
         k++;
         try {
-            if (k == 3 || k == 6) {
+            if (k == 3 || k == 6 || k == 9 || k == 12) {
                 wait();
             }
         } catch (InterruptedException e) {
